@@ -25,8 +25,7 @@ int main(int argc, char **argv){
 		lineptr_copy = malloc(sizeof(char) * (no_chars_read + 1));
 		if(lineptr_copy == NULL){
 			perror("memoryy allocation error");
-			return -
-			1;
+			return -1;
 		}
 		// copy the contents from lineptr to lineptr_copy
 		strcpy(lineptr_copy, lineptr);
@@ -42,7 +41,6 @@ int main(int argc, char **argv){
 			token = strtok(NULL, delim);
 		}
 		num_tokens++;	// For null at end
-		printf("Number of tokens = %d\n", num_tokens);
 
 
 		// allocate the space to hold array of strings and store each token in argv array, use lineptr_copy
@@ -67,11 +65,11 @@ int main(int argc, char **argv){
 		argv[i] = NULL;
 
 
-		for(int i = 0; i < num_tokens - 1; i++){
-			printf("%s ", argv[i]);
-		}
-		printf("\n");
+		// execute the command
+		//execmd(argv);
 
+
+		// freeing up the memory
 		for(i = 0; i < num_tokens; i++){
 			free(argv[i]);
 		}
