@@ -64,9 +64,12 @@ int main(int argc, char **argv){
 		}
 		argv[i] = NULL;
 
+		// for(i = 0; i < num_tokens; i++){
+		// 	printf("%s ", argv[i]);
+		// }
 
 		// execute the command
-		//execmd(argv);
+		execmd(argv);
 
 
 		// freeing up the memory
