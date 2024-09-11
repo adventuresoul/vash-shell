@@ -12,7 +12,6 @@
 ## Operating System Concepts Applied
 
 - **Process Control**: The shell manages processes using **fork()** to create child processes, **exec()** to execute programs, and **wait()** to wait for process completion. It also handles background and foreground processes.
-- **Inter-process Communication (IPC)**: Pipes are used to demonstrate inter-process communication, allowing the output of one command to be passed as input to another.
 
 ## Technologies Used
 
