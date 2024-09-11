@@ -16,7 +16,7 @@
 ## Technologies Used
 
 - **C Programming Language**: The shell is implemented in C, emphasizing low-level system programming and interaction with the Linux kernel.
-- **Linux/Unix System Calls**: Utilizes system calls like **fork()**, **exec()**, **wait()**, and **kill()** for process management and **dup2()** for I/O redirection.
+- **Linux/Unix System Calls**: Utilizes system calls like **fork()**, **exec()**, **wait()**, and **kill()** for process management.
 
 ## Future Enhancements
 
